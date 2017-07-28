@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OptimusInventory</title>
 
-        <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -17,17 +17,17 @@
     <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- bootstrap-daterangepicker -->
     <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-    
+
     <link href="css/site.css" rel="stylesheet">
     <!-- Bootstrap -->
-<!-- Custom Theme Style -->
-<link href="css/custom.css" rel="stylesheet">
-
-    
     <!-- Custom Theme Style -->
-    
-    
-    
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <!-- Custom Theme Style -->
+
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,11 +39,11 @@
 
 <body ng-app="OptimusInventoryApp" class="main-body">
 
-    <nav class="navbar navbar-inverse" ng-if="location.path() !== '/'">
+    <nav class="navbar navbar-inverse" ng-if="location.path() !== '/'" style="border-radius: 0;">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">OptimusInventory</a>
-                
+
             </div>
             <form class="navbar-form navbar-left col-sm-6" style="z-index: 0;">
                 <div class="input-group">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </form>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right navbar-collapse">
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
@@ -72,9 +72,9 @@
                 </li>
                 <li role="presentation">
                     <a href="/#debtors" aria-controls="debtors" role="tab" data-toggle="tab">
-                         <i class="fa fa-book"></i>&nbsp; Debtors
+                        <i class="fa fa-book"></i>&nbsp; Debtors
                     </a>
-                        
+
                 </li>
                 <li role="presentation">
                     <a href="/#inventory" aria-controls="manage_items" role="tab" data-toggle="tab"> <i class="fa fa-cubes"></i>&nbsp; Inventory
@@ -92,18 +92,18 @@
     <div ng-view=""></div>
 
     <!--vendors -->
-            <!-- footer content -->
-            <hr/>
-        <footer>
-          <div class="container">
-              <div class="pull-left">
-            OptimusInventory - Acha Bill, Glenn Faison</a>
-          </div>
-          </div>
-        </footer>
-        <!-- /footer content -->
+    <!-- footer content -->
+    <hr/>
+    <footer>
+        <div class="container">
+            <div class="pull-left">
+                OptimusInventory - Acha Bill, Glenn Faison
+            </div>
+        </div>
+    </footer>
+    <!-- /footer content -->
 
-      <!-- jQuery -->
+    <!-- jQuery -->
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
